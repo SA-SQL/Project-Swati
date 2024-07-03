@@ -1,0 +1,11 @@
+SELECT s.STU_ID, s.STU_NAME, COUNT(e.COURSE_ID) AS Enrolled_Course_Count
+FROM StudentInfo s
+JOIN EnrolledInfo e ON s.STU_ID = e.STU_ID
+GROUP BY s.STU_ID, s.STU_NAME
+HAVING COUNT(e.COURSE_ID) > 1;
+
+SELECT c.COURSE_ID, c.COURSE_NAME, COUNT(e.STU_ID) AS Enrolled_Students_Count
+FROM CourseInfo c
+JOIN EnrolledInfo e ON c.COURSE_ID = e.COURSE_ID
+GROUP BY c.COURSE_ID, c.COURSE_NAME
+ORDER BY Enrolled_Students_Count DESC;

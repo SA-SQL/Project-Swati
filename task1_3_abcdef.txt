@@ -1,0 +1,7 @@
+SELECT s.STU_NAME,s.PHONE_NO, s.EMAIL_ID, s.ADDRESS, e.ENROLL STATUS; 
+FROM StudentInfo s
+JOIN EnrollmentInfo e ON s.STU ID = e.STU ID; JOIN EnrollmentInfo e ON s.STU ID = e.STU ID;
+WHERE e.STU ID = 1; -- Replace 1 with the specific student's STU ID
+SELECT C.COURSE NAME, C.COURSE INSTRUCTOR NAME
+FROM CoursesInfo c;
+COURSE_NAME; 

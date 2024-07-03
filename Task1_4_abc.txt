@@ -1,0 +1,12 @@
+SELECT S.STU_NAME, S.PHONE_NO, S.EMAIL_ID, S.ADDRESS, e.ENROLL STATUS FROM StudentInfo s JOIN EnrollmentInfo e ON s.STU_ID = e.STU_ID;
+
+mysql> SELECT S.STU ID, S.STU NAME
+FROM StudentInfo 5
+-> JOIN EnrollmentInfo e ON S.STU ID = e.STU ID
+-> WHERE e.COURSE_ID = 1; -- Replace 1 with the specific course ID
+
+mysql> SELECT C.COURSE_INSTRUCTOR_NAME, COUNT(e.STU_ID) AS Enrolled_Students_Count
+-> FROM CoursesInfo c
+-> JOIN EnrollmentInfo e ON C.COURSE ID = e.COURSE_ID
+-> GROUP BY C.COURSE INSTRUCTOR NAME;
+COURSE INSTRUCTOR NAME Enrolled Students Count

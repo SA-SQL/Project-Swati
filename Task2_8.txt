@@ -1,0 +1,3 @@
+SELECT Department, Gender, Avg(GPA)
+AS AVERAGE_GPA FROM Student_table
+GROUP BY DEPARTMENT, GENDER;

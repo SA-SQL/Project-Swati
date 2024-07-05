@@ -1,0 +1,3 @@
+ALTER TABLE Student_table
+RENAME TO Student_info;
+

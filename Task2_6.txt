@@ -1,0 +1,3 @@
+UPDATE Student_table
+SET email_id = 'alic.j@example.com', Grade = 'B'
+WHERE Student_id = '1';

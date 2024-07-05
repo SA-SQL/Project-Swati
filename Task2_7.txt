@@ -1,0 +1,3 @@
+SELECT Stu_name, date_part('year',age(Date_Of_Birth)) as Age
+FROM Student_table
+Where Grade = 'B';

@@ -1,0 +1,16 @@
+CREATE TABLE student_table (
+    student_id SERIAL PRIMARY KEY,
+    stu_name TEXT NOT NULL,
+    department TEXT NOT NULL,
+    email_id TEXT NOT NULL,
+    phone_no NUMERIC NOT NULL,
+    address TEXT,
+    date_of_birth DATE,
+    gender TEXT CHECK (gender IN ('Male', 'Female', 'Other')),
+    major TEXT,
+    gpa NUMERIC CHECK (gpa >= 0 AND gpa <= 4.0),
+    grade TEXT CHECK (grade IN ('A', 'B', 'C', 'D', 'E', 'F'))
+);
+
+-- To view the table structure
+\d student_table;

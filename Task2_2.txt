@@ -1,0 +1,14 @@
+INSERT INTO student_table (stu_name, department, email_id, phone_no, address, date_of_birth, gender, major, gpa, grade)
+VALUES 
+('Alice Johnson', 'Computer Science', 'alice@example.com', 1234567890, '123 Maple St', '2000-08-15', 'Female', 'CS', 3.5, 'A'),
+('Bob Smith', 'Mechanical Engineering', 'bob@example.com', 1234567890, '456 Oak St', '1999-06-23', 'Male', 'ME', 3.2, 'B'),
+('Carol White', 'Mechanical Engineering', 'carol@example.com', 1234567890, '789 Pine St', '1998-12-31', 'Female', 'ME', 3.8, 'A'),
+('David Brown', 'Civil Engineering', 'david@example.com', 1234567890, '101 Ash St', '2001-10-07', 'Male', 'CE', 3.1, 'C'),
+('Eve Green', 'Biology', 'eve@example.com', 1234567890, '202 Birch St', '1999-02-15', 'Female', 'BIO', 3.7, 'A'),
+('Frank White', 'Chemistry', 'frank@example.com', 1234567890, '303 Spruce St', '2000-05-19', 'Male', 'CHEM', 3.6, 'B'),
+('Grace Grey', 'Physics', 'grace@example.com', 1234567890, '404 Elm St', '1998-04-10', 'Female', 'PHYS', 3.9, 'A'),
+('Hank Blue', 'Mathematics', 'hank@example.com', 1234567890, '505 Cedar St', '1997-11-25', 'Male', 'MATH', 3.3, 'C'),
+('Ivy Blue', 'History', 'ivy@example.com', 1234567890, '606 Fir St', '2000-12-14', 'Female', 'HIST', 3.4, 'B'),
+('Jack Red', 'Philosophy', 'jack@example.com', 1234567890, '707 Willow St', '2002-01-30', 'Male', 'PHIL', 3.1, 'D');
+
+SELECT * FROM student_table;

@@ -1,0 +1,3 @@
+SELECT *
+FROM Student_table
+ORDER BY GPA DESC, Grade;
